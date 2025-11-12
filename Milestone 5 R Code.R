@@ -1,0 +1,12 @@
+library(readr)
+fifa <- read_delim("FIFA-21 Complete.csv",
+delim = ";", escape_double = FALSE, trim_ws = TRUE)
+View(fifa)
+mean(fifa$overall)
+median(fifa$overall)
+var(fifa$overall)
+sd(fifa$overall)
+mean(fifa$potential)
+median(fifa$potential)
+var(fifa$potential)
+sd(fifa$potential)
